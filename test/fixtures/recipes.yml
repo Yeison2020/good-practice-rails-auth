@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  instructions: MyString
+  minutes_to_complete: 1
+  belongs_to: 
+
+two:
+  title: MyString
+  instructions: MyString
+  minutes_to_complete: 1
+  belongs_to: 
