@@ -2,9 +2,10 @@ class RecipesController < ApplicationController
   def index
     recipes = Recipe.all
     if current_user 
-      render json: recipes, each_serializer: UserSerializer
-
-    
+      render json: recipes, each_serializer: UserSerializer 
+    else  
+      render json: {errors: 'Sorry You need to login to gain be allow to see all te recipes'}, status: :unauthorized
+    end
   end
 
   def create
